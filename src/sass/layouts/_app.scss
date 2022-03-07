@@ -4,7 +4,7 @@
 
   display: grid;
   grid-template-columns: 1fr repeat(10, minmax(min-content, 14rem)) 1fr;
-  grid-template-rows: min-content 90vh;
+  grid-template-rows: min-content 80vh;
 }
 
 .spinner {
