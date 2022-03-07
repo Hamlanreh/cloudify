@@ -1,0 +1,101 @@
+.header {
+  grid-column: 2 / span 10;
+  grid-row: 1 / span 1;
+  font-size: 1.4rem;
+  padding: 0.5rem 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__logo {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+
+  &__nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+
+  &__nav-link {
+    padding: 0.5rem 1rem;
+  }
+
+  &__nav-link:link,
+  &__nav-link:visited {
+    text-decoration: none;
+    color: $color-black;
+  }
+}
+
+.weather-search {
+  display: flex;
+  transition: transform 0.2s ease;
+
+  // Phone
+  @media screen and (max-width: 42.5em) {
+    margin: 0 auto;
+  }
+
+  &:hover {
+    transform: scale(0.97);
+  }
+
+  &__input,
+  &__btn {
+    padding: 0.7rem 1.4rem;
+    background-color: $color-grey-light;
+    font-size: 1.6rem;
+  }
+
+  &__input:focus,
+  &__btn:focus {
+    outline: none;
+  }
+
+  &__input {
+    font-weight: 600;
+    border: 3px solid rgb(54, 134, 161);
+    border-right: none;
+    border-radius: 3rem 0 0 3rem;
+    min-width: 40rem;
+  }
+
+  &__btn {
+    font-weight: 600;
+    border: 3px solid rgb(54, 134, 161);
+    border-left: none;
+    border-radius: 0 3rem 3rem 0;
+    cursor: pointer;
+  }
+}
+
+.top-media {
+  display: flex;
+  justify-content: center;
+
+  // Phone
+  @media screen and (max-width: 42.5em) {
+    display: none;
+  }
+
+  &__link {
+    text-decoration: none;
+    display: inline-block;
+    padding: 1rem;
+    color: $color-black;
+    transition: all 0.2s ease;
+  }
+
+  &__link:hover &__icon {
+    transform: scale(0.9);
+  }
+
+  &__icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    fill: $color-secondary;
+  }
+}

@@ -1,0 +1,86 @@
+.weather__forecasts {
+  background-color: $color-grey-light;
+  grid-column: 2 / span 10;
+  grid-row: 4 / span 1;
+
+  margin-top: 4rem;
+  padding: 1.5rem;
+  color: $color-white;
+  min-height: 30rem;
+}
+
+.forecasts {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(40rem, 1fr));
+  gap: 1.5rem;
+}
+
+.forecast {
+  background-color: $color-black;
+  padding: 2rem;
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: scale(0.97);
+  }
+
+  &__title {
+    grid-column: 1 / -1;
+    grid-row: 1 / span 1;
+    color: $color-black;
+
+    & > h2 {
+      display: block;
+      padding: 2rem;
+      margin: 1rem 0;
+    }
+  }
+
+  &__head {
+    display: flex;
+    align-items: center;
+  }
+
+  &__icon {
+    width: 2rem;
+    height: 2rem;
+    fill: $color-primary;
+    margin-right: 0.5rem;
+
+    &:hover {
+      transform: scale(1.5);
+    }
+  }
+
+  &__data {
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+  }
+
+  &__image {
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    margin: 0 0.5rem;
+  }
+
+  &__list__more {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, minmax(min-content, 3.5rem));
+    row-gap: 0.2rem;
+
+    & li {
+      list-style: none;
+      align-self: center;
+      background-color: $color-black-dark;
+      width: 90%;
+      padding: 3px 5px;
+      display: flex;
+      align-items: center;
+      border-radius: 1rem;
+    }
+  }
+}

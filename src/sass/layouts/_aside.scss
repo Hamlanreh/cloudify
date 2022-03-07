@@ -1,0 +1,134 @@
+.aside {
+  background-color: $color-grey-light;
+  grid-column: 2 / span 3;
+  grid-row: 2 / span 1;
+
+  border-radius: 3px;
+  padding: 1rem;
+  overflow-y: scroll;
+
+  // Tablet
+  @media screen and (max-width: 76.8em) {
+    grid-column: 2 / span 10;
+    grid-row: 3 / span 1;
+
+    margin-top: 4rem;
+    padding: 2rem 1rem;
+
+    min-height: 30rem;
+    max-height: 90vh;
+  }
+
+  & > h1.heading--1.text-center {
+    display: block;
+    margin-bottom: 2rem;
+  }
+
+  /* Scroll bar style */
+  &::-webkit-scrollbar {
+    width: 1.4rem;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: $color-grey-light;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $color-grey-dark;
+    border: 1px solid $color-grey-light;
+    border-radius: 1rem;
+    background-clip: content-box;
+  }
+}
+
+.weather__list {
+  color: $color-white;
+
+  // Tablet
+  @media screen and (max-width: 76.8em) {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(40rem, 1fr));
+    gap: 1rem;
+  }
+}
+
+.weather {
+  background-color: $color-black;
+  padding: 1rem;
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+
+  &:not(:last-child) {
+    margin-bottom: 1rem;
+
+    // Tablet
+    @media screen and (max-width: 76.8em) {
+      margin-bottom: 0;
+    }
+  }
+
+  &:hover {
+    transform: scale(0.97);
+  }
+
+  &__head {
+    display: flex;
+    align-items: center;
+  }
+
+  &__close {
+    background-color: transparent;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-left: auto;
+    border: none;
+    color: $color-primary;
+    transition: transform 0.2s ease;
+
+    &:hover {
+      transform: scale(1.5);
+    }
+  }
+
+  &__icon {
+    width: 2rem;
+    height: 2rem;
+    fill: $color-primary;
+    margin-right: 0.5rem;
+
+    &:hover {
+      transform: scale(1.5);
+    }
+  }
+
+  &__data {
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+  }
+
+  &__image {
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    margin: 0 0.5rem;
+  }
+
+  &__list__more {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, minmax(min-content, 3.5rem));
+    row-gap: 0.2rem;
+
+    & li {
+      list-style: none;
+      align-self: center;
+      background-color: $color-black-dark;
+      width: 90%;
+      padding: 3px 5px;
+      display: flex;
+      align-items: center;
+      border-radius: 1rem;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.main {
+  grid-column: 5 / span 7;
+  grid-row: 2 / span 1;
+
+  background-color: $color-grey-light;
+  position: relative;
+
+  // Tablet
+  @media screen and (max-width: 76.8em) {
+    grid-column: 2 / span 10;
+  }
+}
+
+#map {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.error {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: red;
+}

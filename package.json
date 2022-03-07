@@ -1,0 +1,20 @@
+{
+  "name": "cloudify",
+  "version": "1.0.0",
+  "description": "Cloudify is a modern weather forecast application",
+  "default": "index.html",
+  "scripts": {
+    "sass:watch": "sass -w ./src/sass/master.scss ./src/css/style.css",
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
+  },
+  "author": "Oluwabi Ahmed - Hamlanreh",
+  "license": "ISC",
+  "dependencies": {
+    "leaflet": "^1.7.1"
+  },
+  "devDependencies": {
+    "parcel": "^2.3.2",
+    "sass": "^1.49.9"
+  }
+}

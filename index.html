@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <link rel="shortcut icon" href="./src/images/favicon.ico" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <script defer type="module" src="./src/js/controller.js"></script>
+
+    <title>Cloudify | A modern weather app</title>
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <div class="header__logo-box">
+          <img src="./src/images/logo.png" alt="Logo" class="header__logo" />
+        </div>
+
+        <form class="weather-search" action="">
+          <input
+            class="weather-search__input"
+            type="search"
+            placeholder="Search [City: London, Paris]"
+          />
+          <button class="weather-search__btn" type="submit">🔍</button>
+        </form>
+
+        <nav class="top-media">
+          <a class="top-media__link" href="#">
+            <svg class="top-media__icon">
+              <use
+                xlink:href="./src/images/icons/sprite.svg#icon-discord"
+              ></use>
+            </svg>
+          </a>
+
+          <a class="top-media__link" href="#">
+            <svg class="top-media__icon">
+              <use
+                xlink:href="./src/images/icons/sprite.svg#icon-twitter"
+              ></use>
+            </svg>
+          </a>
+
+          <a class="top-media__link" href="#">
+            <svg class="top-media__icon">
+              <use
+                xlink:href="./src/images/icons/sprite.svg#icon-youtube"
+              ></use>
+            </svg>
+          </a>
+
+          <a class="top-media__link" href="#">
+            <svg class="top-media__icon">
+              <use
+                xlink:href="./src/images/icons/sprite.svg#icon-linkedin"
+              ></use>
+            </svg>
+          </a>
+        </nav>
+      </header>
+
+      <aside class="aside">
+        <h1 class="heading--1 text-center">Location Weather</h1>
+        <ul class="weather__list"></ul>
+      </aside>
+
+      <main class="main">
+        <div id="map"></div>
+      </main>
+
+      <section class="weather__forecasts">
+        <div class="forecast__title">
+          <h2 class="heading--1 text-center">Forecasts:</h2>
+        </div>
+        <ul class="forecasts" data-id=""></ul>
+      </section>
+
+      <footer class="footer">
+        <div class="media">
+          <a class="media__link" href="#">
+            <svg class="media__icon">
+              <use
+                xlink:href="./src/images/icons/sprite.svg#icon-discord"
+              ></use>
+            </svg>
+          </a>
+
+          <a class="media__link" href="#">
+            <svg class="media__icon">
+              <use
+                xlink:href="./src/images/icons/sprite.svg#icon-twitter"
+              ></use>
+            </svg>
+          </a>
+
+          <a class="media__link" href="#">
+            <svg class="media__icon">
+              <use
+                xlink:href="./src/images/icons/sprite.svg#icon-youtube"
+              ></use>
+            </svg>
+          </a>
+
+          <a class="media__link" href="#">
+            <svg class="media__icon">
+              <use
+                xlink:href="./src/images/icons/sprite.svg#icon-linkedin"
+              ></use>
+            </svg>
+          </a>
+        </div>
+
+        <div class="copyright">&copy;copyright</div>
+      </footer>
+    </div>
+  </body>
+</html>

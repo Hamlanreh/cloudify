@@ -1,0 +1,24 @@
+.heading {
+  &--1 {
+    display: inline-block;
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+
+  &--2 {
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  &--3 {
+    display: inline-block;
+    font-size: 1.4rem;
+    font-weight: 300;
+  }
+}
+
+.paragraph {
+  display: inline-block;
+  font-size: 1.4rem;
+}

@@ -1,0 +1,37 @@
+.footer {
+  grid-column: 2 / span 10;
+  grid-row: 5 / span 1;
+
+  background-color: $color-grey-light;
+  margin-top: 4rem;
+  padding: 2rem;
+  color: $color-black;
+}
+
+.media {
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+
+  &__link {
+    text-decoration: none;
+    display: inline-block;
+    padding: 1rem;
+    color: $color-black;
+    transition: all 0.2s ease;
+  }
+
+  &__link:hover &__icon {
+    transform: scale(0.9);
+  }
+
+  &__icon {
+    width: 6rem;
+    height: 6rem;
+    fill: $color-secondary;
+  }
+}
+
+.copyright {
+  text-align: center;
+}

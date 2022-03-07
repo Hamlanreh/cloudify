@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 10px
+
+  // Desktop
+  @media screen and (min-width: 144em) {
+    font-size: 75%;
+  }
+
+  // Laptop
+  @media screen and (max-width: 102.4em) {
+    font-size: 56.25%;
+  }
+
+  // Tablet
+  @media screen and (max-width: 76.8em) {
+    font-size: 50%;
+  }
+
+  // Phone
+  @media screen and (max-width: 42.5em) {
+    font-size: 43.75%;
+  }
+}
+
+body {
+  font-family: $primary-font;
+  font-weight: 300;
+  line-height: 1.5;
+}
