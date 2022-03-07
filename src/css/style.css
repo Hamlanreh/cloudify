@@ -64,7 +64,8 @@ body {
 
 .paragraph {
   display: inline-block;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
+  font-weight: 300;
 }
 
 .app {
