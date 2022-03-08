@@ -75,6 +75,11 @@ body {
   grid-template-columns: 1fr repeat(10, minmax(min-content, 14rem)) 1fr;
   grid-template-rows: min-content 80vh;
 }
+@media screen and (max-width: 76.8em) {
+  .app {
+    grid-template-rows: min-content 70vh;
+  }
+}
 
 .spinner__box {
   display: flex;

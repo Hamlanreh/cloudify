@@ -5,6 +5,11 @@
   display: grid;
   grid-template-columns: 1fr repeat(10, minmax(min-content, 14rem)) 1fr;
   grid-template-rows: min-content 80vh;
+
+  // Tablet
+  @media screen and (max-width: 76.8em) {
+    grid-template-rows: min-content 70vh;
+  }
 }
 
 .spinner {
