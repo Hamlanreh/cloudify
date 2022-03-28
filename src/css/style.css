@@ -238,7 +238,7 @@ body {
 .media__icon {
   width: 6rem;
   height: 6rem;
-  fill: #212622;
+  fill: #fff;
 }
 
 .copyright {
@@ -400,7 +400,7 @@ body {
 .top-media__icon {
   width: 2.5rem;
   height: 2.5rem;
-  fill: #212622;
+  fill: #fff;
 }
 
 .main {
