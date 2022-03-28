@@ -70,7 +70,8 @@ body {
 
 .app {
   min-height: 100vh;
-  background-image: linear-gradient(45deg, #adcccf, #6ac7cf61);
+  background-image: url("../images/hero.jpg");
+  background-size: cover;
   display: grid;
   grid-template-columns: 1fr repeat(10, minmax(min-content, 14rem)) 1fr;
   grid-template-rows: min-content 80vh;
@@ -237,7 +238,7 @@ body {
 .media__icon {
   width: 6rem;
   height: 6rem;
-  fill: #2880ca;
+  fill: #212622;
 }
 
 .copyright {
@@ -359,24 +360,20 @@ body {
   transform: scale(0.97);
 }
 .weather-search__input, .weather-search__btn {
-  padding: 0.7rem 1.4rem;
   background-color: rgba(238, 238, 238, 0.89);
+  padding: 1rem 2rem;
   font-size: 1.6rem;
+  font-weight: 600;
+  border: none;
 }
 .weather-search__input:focus, .weather-search__btn:focus {
   outline: none;
 }
 .weather-search__input {
-  font-weight: 600;
-  border: 3px solid #3686a1;
-  border-right: none;
   border-radius: 3rem 0 0 3rem;
   min-width: 40rem;
 }
 .weather-search__btn {
-  font-weight: 600;
-  border: 3px solid #3686a1;
-  border-left: none;
   border-radius: 0 3rem 3rem 0;
   cursor: pointer;
 }
@@ -403,7 +400,7 @@ body {
 .top-media__icon {
   width: 2.5rem;
   height: 2.5rem;
-  fill: #2880ca;
+  fill: #212622;
 }
 
 .main {

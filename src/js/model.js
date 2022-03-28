@@ -2,6 +2,7 @@ import { API_URL, API_KEY, API_FORECAST_URL } from './config';
 import { getJSON, getWeatherData, getLocationForcast } from './helper';
 
 export const state = {
+  key: API_KEY,
   coord: {
     lat: '',
     lon: '',
@@ -12,8 +13,6 @@ export const state = {
     query: '',
     result: {},
   },
-
-  key: API_KEY,
 };
 
 export const getPosition = async function () {
@@ -87,18 +86,3 @@ export const searchWeatherWithId = async function (queryId) {
     throw err;
   }
 };
-
-/*
-export const searchForecasts = async function (id) {
-  try {
-    // const forecasts = await getJSON(
-    //   `${API_FORECAST_URL}?id=${id}&units=metric&appid=${state.key}`
-    // );
-    // return forecasts;
-  } catch (err) {
-    throw err;
-  }
-};
-*/
-
-// https://api.openweathermap.org/data/2.5/onecall?id=2332459&units=metric&exclude=current,minutely,hourly,alerts&appid=ece8396aded4725ff57b2feaf136adcb

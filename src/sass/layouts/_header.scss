@@ -45,9 +45,11 @@
 
   &__input,
   &__btn {
-    padding: 0.7rem 1.4rem;
     background-color: $color-grey-light;
+    padding: 1rem 2rem;
     font-size: 1.6rem;
+    font-weight: 600;
+    border: none;
   }
 
   &__input:focus,
@@ -56,17 +58,11 @@
   }
 
   &__input {
-    font-weight: 600;
-    border: 3px solid rgb(54, 134, 161);
-    border-right: none;
     border-radius: 3rem 0 0 3rem;
     min-width: 40rem;
   }
 
   &__btn {
-    font-weight: 600;
-    border: 3px solid rgb(54, 134, 161);
-    border-left: none;
     border-radius: 0 3rem 3rem 0;
     cursor: pointer;
   }
@@ -96,6 +92,6 @@
   &__icon {
     width: 2.5rem;
     height: 2.5rem;
-    fill: $color-secondary;
+    fill: $color-black-dark;
   }
 }

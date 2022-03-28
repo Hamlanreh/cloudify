@@ -52,7 +52,6 @@ export const getLocationForcast = function (daysWeather) {
 
     return weather;
   });
-
   return weatherDatas;
 };
 
@@ -69,7 +68,13 @@ export const formatTime = function (t) {
 
 // Get forcast week day
 const getForcastDay = function (timeStamp) {
-  const day = new Date(timeStamp * 1000).getDay();
-  const daysOfWeek = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-  return daysOfWeek[day];
+  const time = new Date(timeStamp * 1000).getTime();
+  const locale = navigator.language;
+  const timeFormat = new Intl.DateTimeFormat(locale, {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  });
+
+  return timeFormat.format(time);
 };
