@@ -229,6 +229,7 @@ body {
   text-decoration: none;
   display: inline-block;
   padding: 1rem;
+  margin: 0 2rem;
   color: #181c1b;
   transition: all 0.2s ease;
 }
@@ -236,12 +237,14 @@ body {
   transform: scale(0.9);
 }
 .media__icon {
-  width: 6rem;
-  height: 6rem;
-  fill: #fff;
+  width: 4rem;
+  height: 4rem;
+  fill: #212622;
 }
 
 .copyright {
+  font-size: 2rem;
+  font-weight: 600;
   text-align: center;
 }
 

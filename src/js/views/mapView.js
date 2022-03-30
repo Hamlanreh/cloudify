@@ -4,7 +4,7 @@ import icons from 'url:../../images/icons/sprite.svg';
 class MapView {
   #parentElement = document.querySelector('#map');
   #map;
-  #errorMessage = `Map can't access location, please refresh.`;
+  #errorMessage = `Map can't access location, Enable GPS and refresh please.`;
 
   render(position, message) {
     this._clear();
