@@ -59,10 +59,11 @@ const controlDeleteWeather = function (e) {
 
 const controlClickWeather = async function (e) {
   try {
-    if (!e.target.classList.contains('weather')) return;
+    if (!e.target.closest('.weather')) return;
+    const weatherBox = e.target.closest('.weather');
 
     // Selected weather id
-    const weatherId = e.target.dataset.id;
+    const weatherId = weatherBox.dataset.id;
     // Get location weather id
     const weather = await model.searchWeatherWithId(weatherId);
 
