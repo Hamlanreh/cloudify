@@ -29,8 +29,7 @@ The Cloudify is a beautiful weather application for current weather information 
 
 ## Screenshots
 
-![Weather list](https://user-images.githubusercontent.com/101047579/184637607-510f81ae-49e9-45e7-8e6f-0396a7fe8b63.png)
-Weather list section
+!![cloudify-weather-app-screenshot](https://user-images.githubusercontent.com/101047579/192184483-fb16ea2f-15ac-4c77-8654-ad721f9a625f.png)
 
 ![Forecast list](https://user-images.githubusercontent.com/101047579/184637637-472d74a0-cf43-4ec5-9cb1-8e3a499d2de3.png)
 Forecast list section
